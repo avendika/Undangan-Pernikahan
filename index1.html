@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Nikah</title>
+
+  <!-- ini bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- ini font goggle -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap" rel="stylesheet">
+
+<!-- ini simply countdown -->
+<link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
+<script src="countdown/simplyCountdown.min.js"></script>
+
+<!-- Ini bootstrap icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!-- ini css external -->
+<link rel="stylesheet" href="style1.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<div>
+  <!-- Ini bagian modal -->
+  <div id="modalku" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content romantic-modal-content">
+            <div class="modal-body text-center p-4 p-md-5">
+                <span class="romantic-tag text-uppercase">The Wedding of</span>
+                <h1 class="romantic-names my-3">Aven & Neva</h1>
+                <p class="salam-arabic mb-4">اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ</p>
+                
+                <!-- Bingkai Foto Prewedding Romantis -->
+                <div class="couple-frame-wrapper mb-4">
+                  <div class="couple-frame">
+                    <img class="couple-img" src="img/foto prewed hal depan.jpg" alt="Aven & Neva Prewedding">
+                  </div>
+                </div>
+                
+                <h6 class="recipient-title mb-1">Kepada Yth. Bapak/Ibu/Saudara/i:</h6>
+                <div class="recipient-box mb-4">
+                  <h4 class="recipient-name">
+                    <span id="modal-depan"></span>
+                    <span id="modal-tengah"></span>
+                    <span id="modal-belakang"></span>
+                  </h4>
+                </div>
+                
+                <div>
+                  <button id="toggleButton" type="button" class="btn romantic-btn px-4 py-3 shadow" data-bs-dismiss="modal">
+                    <i class="bi bi-envelope-open-heart me-2"></i> Buka Undangan
+                  </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ini bagian hero/pembukaan-->
+<section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+<main> 
+  <h4>Kepada Yang Terhormat: 
+  <span id="depan"></span>
+  <span id="tengah"></span>
+  <span id="belakang"></span>
+  </h4>
+  <h1>Aven & Neva</h1>
+  <p>Akan melangsungkan resepsi pernikahan dalam :</p>
+  <div class="simply-countdown"></div>
+  <!-- <a href="#home" class="btn btn-lg" onClick="enableScroll()">Lihat Undangan</a> -->
+</main>
+</section>
+
+<!-- Ini bagian Navbar -->
+<nav class="navbar navbar-expand-md sticky-top mynavbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">A & N</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">A & N</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#info">info</a>
+          <a class="nav-link" href="#story">story</a>
+          <a class="nav-link" href="#gallery">gallery</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav> 
+
+<!-- Ini bagian home -->
+<section id="home" class="home">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2>Acara Pernikahan</h2>
+        <h3>Diselenggarakan pada 11 Desember 2023 di Tuban, Jawa Timur.</h3>
+        <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir di pernikahan kami</p>
+      </div>
+    </div>
+
+    <div class="row couple">
+<!-- ini gambar mempelai pria -->
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="paragraf col-8 text-end">
+            <h3>Avendika Wahyu Saputra</h3>
+            <p>Pria kelahiran 22 April 2005 di Tuban ini memiliki hobi bermain gitar dan mengkoding. Yang mana sekarang akan menjalani hubungan yang serius dengan Dek Neva.</p>
+            <p>Putra dari Bpk. Sumasto <br> dan <br> Ibu. Endah</p>
+          </div>
+          <div class="col-4">
+            <img src="img/Aven.png" alt="Aven" class="img-responsive rounded-circle">
+          </div>
+        </div>
+      </div>
+
+      <!-- Ini logo love -->
+      <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+<!-- ini gambar mempelai wanita -->
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-4">
+            <img src="img/Neva.png" alt="Neva" class="img-responsive rounded-circle">
+          </div>
+          <div class="col-8  ">
+            <h3>Akidneva Uyhaw Artupas </h3>
+            <p>Wanita kelahiran 11 April 2004 di Tuban ini memiliki hobi memasak dan melukis. Yang mana sekarang akan menjalani hubungan yang serius dengan Mas Aven.</p>
+            <p>Putra dari Bpk. sukamto <br> dan <br> Ibu. Ekowati</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ini adalah bagian info -->
+<section id="info"  class="info">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <h2>Informasi Alamat</h2>
+        <p class="alamat">Alamat: Batik Avendika Dsn.Gesik, RT.02/RW.02. <br> Gesikharjo, Kec. Palang, Kabupaten Tuban, Jawa Timur 62391 </p>
+        <a href="https://maps.app.goo.gl/pmjbS9wX2akdr3ef9" target="_blank" class="btn btn-light btn-sm my-4">Klik untuk membuka peta </a>
+        <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.
+        </p>
+      </div>
+    </div>
+
+<!-- Ini bagian Card -->
+    <div class="row justify-content-center mt-4">
+      <!-- Ini card Akad -->
+      <div class="col-md-5 col-10">
+        <div class="card text-center text-bg-light mb-5">
+          <div class="card-header">Akad Nikah</div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block"></i>
+                <span>08.00 - 10.00</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar2-heart d-block"></i>
+                <span>Senin, 11 Desember 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+          </div>
+        </div>
+      </div>
+      <!-- Ini card Resepsi -->
+      <div class="col-md-5 col-10">
+        <div class="card text-center text-bg-light">
+          <div class="card-header">Resepsi</div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block"></i>
+                <span>11.00 - selesai</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar2-heart d-block"></i>
+                <span>Senin, 11 Desember 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            Saat acara resepsi diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ini adalah bagian story -->
+<section id="story" class="story">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <span>Bagaimana Kita Bisa Ketemu</span>
+        <h2>Cerita Kami</h2>
+        <p>Jadi berikut in adalah cerita kami dari awal, tentang bagaimana kita bisa melanjutkan hubungan ke jenjang pernikahan.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <ul class="timeline">
+
+          <li>
+            <div class="timeline-image" style="background-image: url(img/awal\ ketemu.jpg);"></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3>Pertama Bertemu</h3>
+                <span>1 Juni 2000</span>
+              </div>
+              <div class="timeline-body">
+                <p>Saat pulang sekolah saya berjalan di pinggir trotoar tanpa di sengaja saya melihat seorang gadis yang sangat imu lalu saya berlari menghampirinya dengan rasa ingin berkenalan, tanpa di sengaja tiba" ada mobil yang akan menabrak saya, lalu dengan spontan saya di dorong oleh gadis tersebut dan akhirnya kita jatuh bersama dari situlah awal saya kenal sama dek Neva.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-image" style="background-image: url(img/Mulai\ serius.jpg);"></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3>Mulai Serius</h3>
+                <span>1 Januari 2005</span>
+              </div>
+              <div class="timeline-body">
+                <p>Semenjak setelah ke jadian tadi saya sudah tidak bertemu lagi dengan Neva dan memutuskan untuk tidak melanjutkan ke jenjang pendidikan yang lebih tinggi, tetapi melanjutkan untuk bekerja sambil memikirkan nya setiap waktu.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline-image" style="background-image: url(img/Nikah.jpg);"></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3>Menikah</h3>
+                <span>11 Agustus 2023</span>
+              </div>
+              <div class="timeline-body">
+                <p>Akhirnya di usia saya yang sudah 25 tahun ini saya bertemu lagi dengan dek Neva dan tanpa basa-basi dek Neva mengajak saya untuk menikah, ntah apa yang telah terjadi akupun mengikuti alur kerjanya saja dan pernikahan akan di langsungkan di hari yang sudah di tetapkan.
+                </p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <span>Memori Kisah Kami</span>
+        <h2>Galeri Foto</h2>
+        <p>Semoga kita bisa menjadi pasangan yang sakinah mawadah wa rohmah</p>
+      </div>
+    </div>
+
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+      <div class="col mt-3">
+        <a href="img/gallery/gambar1.jpg" data-toggle="lightbox" data-caption="Sandhika & Nofa 1" data-gallery="mygallery">
+          <img src="img/gallery/gambar1.jpg" alt="Sandhika & Nofa 1" class="img-fluid w-100 h-100 rounded">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/gambar2.jpg" data-toggle="lightbox" data-caption="Sandhika & Nofa 2"
+          data-gallery="mygallery">
+          <img src="img/gallery/gambar2.jpg" alt="Sandhika & Nofa 2" class="img-fluid w-100 h-100 rounded">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/gambar3.jpg" data-toggle="lightbox" data-caption="Sandhika & Nofa 3"
+          data-gallery="mygallery">
+          <img src="img/gallery/gambar3.jpg" alt="Sandhika & Nofa 3" class="img-fluid w-100 h-100 rounded">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/gambar4.jpg" data-toggle="lightbox" data-caption="Sandhika & Nofa 4"
+          data-gallery="mygallery">
+          <img src="img/gallery/gambar4.jpg" alt="Sandhika & Nofa 4" class="img-fluid w-100 h-100 rounded">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/gambar5.jpg" data-toggle="lightbox" data-caption="Sandhika & Nofa 5"
+          data-gallery="mygallery">
+          <img src="img/gallery/gambar5.jpg" alt="Sandhika & Nofa 5" class="img-fluid w-100 h-100 rounded">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/gambar7.jpeg" data-toggle="lightbox" data-caption="Sandhika & Nofa 6"
+          data-gallery="mygallery">
+          <img src="img/gallery/gambar7.jpeg" alt="Sandhika & Nofa 6" class="img-fluid w-100 h-100 rounded">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div></div>
+
+<!-- Ini js buat modal -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#modalku").modal('show');
+        });
+    </script>
+<!-- Ini bagian penutup -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <p class="penutup"><b>Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga
+          Apabila Bapak/Ibu, Saudara/i berkenan hadir.
+          Atas kehadiran dan do’a Bapak/ Saudara kami ucapkan terima kasih
+        </b></p>
+        <small class="block">&copy; 2023 A & N Wedding. All Rights Reserved.</small>
+        <small class="block">Design by <a href="https://www.instagram.com/ve_nst/">@ve_nst</a>.</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="audio-container">
+  <audio id="song" loop>
+    <source src="audio/musik.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="audio-icon-wrapper" style="display: none;">
+    <i class="bi bi-disc"></i>
+  </div>
+</div>
+
+<!-- Ini js audio -->
+<script>
+  const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+  const audioIcon = document.querySelector('.audio-icon-wrapper i');
+  const song = document.querySelector('#song');
+  let isPlaying = false; // Accessible globally
+
+  function playAudio() {
+    song.volume = 1.0;
+    song.play().then(() => {
+      isPlaying = true;
+      audioIconWrapper.style.display = 'flex';
+      audioIcon.classList.add('bi-disc');
+      audioIcon.classList.remove('bi-pause-circle');
+    }).catch(error => {
+      console.log("Audio play blocked by browser:", error);
+    });
+  }
+
+  function pauseAudio() {
+    song.pause();
+    isPlaying = false;
+    audioIcon.classList.remove('bi-disc');
+    audioIcon.classList.add('bi-pause-circle');
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('toggleButton');
+    
+    // Set volume to normal range
+    song.volume = 1.0;
+
+    // Start playing ONLY when "Buka Undangan" is clicked
+    if (toggleButton) {
+      toggleButton.addEventListener('click', function () {
+        playAudio();
+      });
+    }
+
+    // Manual toggle play/pause via icon
+    audioIconWrapper.onclick = function () {
+      if (isPlaying) {
+        pauseAudio();
+      } else {
+        playAudio();
+      }
+    };
+  });
+</script>
+
+<!-- Ini js nav dropdown -->
+<script>
+  $(document).ready(function() {
+    // Close offcanvas when a valid navigation link is clicked
+    $('.mynavbar .nav-link').click(function(e) {
+      var href = $(this).attr('href');
+      // If it is an empty link, prevent default and do nothing
+      if (href === '#' || !href) {
+        e.preventDefault();
+        return;
+      }
+      
+      var offcanvasEl = document.getElementById('offcanvasNavbar');
+      if (offcanvasEl && offcanvasEl.classList.contains('show')) {
+        // Use Bootstrap's offcanvas API to hide the drawer cleanly
+        var offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
+        if (!offcanvasInstance) {
+          offcanvasInstance = new bootstrap.Offcanvas(offcanvasEl);
+        }
+        if (offcanvasInstance) {
+          offcanvasInstance.hide();
+        } else {
+          // Fallback: trigger a native click event on the offcanvas close button
+          var closeBtn = offcanvasEl.querySelector('.btn-close');
+          if (closeBtn) {
+            closeBtn.click();
+          }
+        }
+      }
+    });
+  });
+</script>
+
+<!-- Ini Style & js Navbar -->
+<style>
+  .mynavbar {
+    transition: background-color 1s;
+  }
+</style>
+<script>
+  window.addEventListener('scroll', function () {
+    const targetElement1 = document.getElementById('home');
+    const targetElement2 = document.getElementById('info'); 
+    const targetElement3 = document.getElementById('story'); 
+    const targetElement4 = document.getElementById('gallery'); 
+    const mynavbar = document.querySelector('.mynavbar');
+
+    if (targetElement1 && window.scrollY >= targetElement1.offsetTop) {
+      mynavbar.style.backgroundColor = '#c8a2618a';
+      if (isPlaying) {
+        audioIconWrapper.style.display = 'flex';
+        song.volume = 1.0;
+      }
+    } 
+    if (targetElement2 && window.scrollY >= targetElement2.offsetTop) {
+      mynavbar.style.backgroundColor = '#f7f4eb8a';
+      if (isPlaying) {
+        audioIconWrapper.style.display = 'flex';
+        song.volume = 0.7;
+      }
+    }
+    if (targetElement3 && window.scrollY >= targetElement3.offsetTop) {
+      mynavbar.style.backgroundColor = '#c8a2618a';
+      if (isPlaying) {
+        audioIconWrapper.style.display = 'flex';
+        song.volume = 0.5;
+      }
+    }
+    if (targetElement4 && window.scrollY >= targetElement4.offsetTop) {
+      mynavbar.style.backgroundColor = '#f7f4eb8a';
+      if (isPlaying) {
+        audioIconWrapper.style.display = 'flex';
+        song.volume = 0.3;
+      }
+    }
+  });
+</script>
+
+<!-- Ini js countdown -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+  simplyCountdown('.simply-countdown',{
+            year: 2026, // required
+            month: 6, // required
+            day: 11, // required
+            hours: 8, // Default is 0 [0-23] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'hari', plural: 'hari' },
+                hours: { singular: 'jam', plural: 'jam' },
+                minutes: { singular: 'menit', plural: 'menit' },
+                seconds: { singular: 'detik', plural: 'detik' }
+            },
+          })
+</script>
+
+<!-- Ini js get  -->
+<script>
+  function GetURLParameter(sParam)
+  {
+      var sPageURL = window.location.search.substring(1);
+      var sURLVariables = sPageURL.split('&');
+      for (var i = 0; i < sURLVariables.length; i++) 
+      {
+          var sParameterName = sURLVariables[i].split('=');
+          if (sParameterName[0] == sParam) 
+          {
+              return sParameterName[1];
+          }
+      }
+  }
+  var rawDepan = GetURLParameter('depan');
+  var rawTengah = GetURLParameter('tengah');
+  var rawBelakang = GetURLParameter('belakang');
+
+  var depan = "";
+  var tengah = "";
+  var belakang = "";
+
+  if (rawDepan === undefined && rawTengah === undefined && rawBelakang === undefined) {
+      depan = "Tamu";
+      tengah = "Spesial";
+      belakang = "";
+  } else {
+      depan = rawDepan ? decodeURIComponent(rawDepan) : "";
+      tengah = rawTengah ? decodeURIComponent(rawTengah) : "";
+      belakang = rawBelakang ? decodeURIComponent(rawBelakang) : "";
+  }
+
+  // Set hero elements
+  if (document.getElementById("depan")) document.getElementById("depan").innerHTML = depan;
+  if (document.getElementById("tengah")) document.getElementById("tengah").innerHTML = tengah;
+  if (document.getElementById("belakang")) document.getElementById("belakang").innerHTML = belakang;
+
+  // Set modal elements
+  if (document.getElementById("modal-depan")) document.getElementById("modal-depan").innerHTML = depan;
+  if (document.getElementById("modal-tengah")) document.getElementById("modal-tengah").innerHTML = tengah;
+  if (document.getElementById("modal-belakang")) document.getElementById("modal-belakang").innerHTML = belakang;
+  </script>
+
+</body>
+</html>
